@@ -33,5 +33,5 @@ npm run dev
 * **Merge Strategy**: When target wallet closes position but you still hold, sell your position
 * **Error Handling**: Retry failed orders up to RETRY_LIMIT, then mark as failed
 ---
-**keywords**: **polymarket arbitrage bot**, **polymarket trading bot**, **polymarket copy trading bot**, **polymarket copytrading bot**, **Politics**, **Sports**, **Weather**, **Crypto**
+**keywords**: **polymarket trading bot**, **polymarket copy trading bot**, **polymarket copytrading bot**, **Politics**, **Sports**, **Weather**, **Crypto**
 

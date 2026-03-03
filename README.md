@@ -52,7 +52,7 @@ Let's keep grinding together
 * **Error Handling**: Retry failed orders up to RETRY_LIMIT, then mark as failed
 ---
 
-Please contact me on [@roswellecho](https://t.me/roswellecho) for more discussion, purchase, collaboration
+Please contact me on [@lemnlabs](https://t.me/lemnlabs) for more discussion, purchase, collaboration
 
 ---
 **keywords**: **polymarket-copy-trading-bot**, **polymarket-copytrading-bot**, **polymarket-trading-politics**, **polymarket-trading-sports**, **polymarket-trading-weather**, **polymarket-trading-crypto**, **sports**, **weather**, **polictics**

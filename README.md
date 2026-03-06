@@ -24,9 +24,8 @@ not perfect now but it's stable with decent result.
 
 <img width="463" height="194" alt="image" src="https://github.com/user-attachments/assets/97c5b62c-9a2a-47f3-b899-32ea45f6e34b" />
 
-```
-Please contact me on [@lemnlabs](https://t.me/lemnlabs) for more discussion, purchase
-```
+## Please contact me on [@lemnlabs](https://t.me/lemnlabs) for more discussion, purchase
+
 ---
 
 ### Trading Strategies
@@ -61,9 +60,9 @@ Auto-adjusts for fees, market liquidity, and sudden volatility. The bot intellig
 High Speed, Low Stress
 Trades thousands of micro-opportunities automatically. Set it up, let it run, and watch it work. This Polymarket arbitrage bot handles the complexity so you don't have to.
 
-```
-Please contact me on [@lemnlabs](https://t.me/lemnlabs) for more discussion, purchase, collaboration
-```
+
+## Please contact me on [@lemnlabs](https://t.me/lemnlabs) for more discussion, purchase, collaboration
+
 ---
 Arbitrage Strategy
 
@@ -297,9 +296,9 @@ composite = (
     rr_score * 0.10            # Increase for risk/reward focus
 )
 
-```
-Please contact me on [@lemnlabs](https://t.me/lemnlabs) for more discussion, purchase, 
-```
+
+## Please contact me on [@lemnlabs](https://t.me/lemnlabs) for more discussion, purchase, 
+
 ---
 
 **keywords**: **polymarket-copy-trading-bot**, **polymarket-copytrading-bot**, **polymarket-trading-politics**, **polymarket-trading-sports**, **polymarket-trading-weather**, **polymarket-trading-crypto**, **sports**, **weather**, **polictics**

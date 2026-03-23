@@ -108,7 +108,7 @@ Where are you right now?
 ```
 1. First you follow how to set up this bot in this readme
 2. You can choose top whales wallet for copy trading
-3. better to start with a similar budget. A reasonable range would be above $3–4k, especially for building and replicating whale trading logic.
+3. better to start with a similar budget. A reasonable range would be above $3~4k, especially for building and replicating whale trading logic.
 If using peanuts, it's easy to lose your money.
 ```
 

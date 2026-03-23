@@ -108,8 +108,8 @@ Where are you right now?
 ```
 1. First you follow how to set up this bot in this readme
 2. You can choose top whales wallet for copy trading
-3. Better start similar amount(reasonable amount is more than $3~4k) with them to copy whales trading logic
-If using small, it's easy to lose your money
+3. better to start with a similar budget. A reasonable range would be above $3–4k, especially for building and replicating whale trading logic.
+If using peanuts, it's easy to lose your money.
 ```
 
 Not sure which tier you need? Start at zero. Most people who run the Explorer tier never leave it.

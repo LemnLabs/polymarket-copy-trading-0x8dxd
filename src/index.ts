@@ -21,7 +21,7 @@ const getFullEnvFromProcess = () => ({
     MONGO_URI: process.env.MONGO_URI ?? '',
     RPC_URL: process.env.RPC_URL ?? '',
     USDC_CONTRACT_ADDRESS: process.env.USDC_CONTRACT_ADDRESS ?? '',
-});
+})
 
 const checkVariable = async () => {
     const privateKey = process.env.PRIVATE_KEY;

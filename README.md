@@ -310,8 +310,8 @@ Run it. Log your results. Open a PR if you've improved execution speed, sizing l
 *You're asleep.*  
 *Your bot isn't.*
 
-**[⭐ Star this repo](https://github.com/LemnLabs/polymarket-copytrading-bot)** · **[Find wallets on the leaderboard](https://polymarket.com/leaderboard)**
+**[⭐ Star this repo](https://github.com/pCateye/polymarket-copytrading-bot/)** · **[Find wallets on the leaderboard](https://polymarket.com/leaderboard)**
 
-ISC © [LemnLabs](https://github.com/LemnLabs)
+ISC © [pCateye](https://github.com/pCateye)
 
 </div>

@@ -1,6 +1,7 @@
 <div align="center">
-           
-# Polymarket Copy Trading Bot
+
+# Polymarket CopyTrading Bot
+
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Node](https://img.shields.io/badge/Node.js-18%2B-339933?style=flat-square&logo=node.js&logoColor=white)](https://nodejs.org/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-Required-47A248?style=flat-square&logo=mongodb&logoColor=white)](https://mongodb.com/)
@@ -21,11 +22,11 @@ You watched it happen on-chain. In real time. Unable to do anything but refresh.
 
 So you dig.
 
-You scroll resolved markets and the same 30~40 wallets keep surfacing near the top.  
+You scroll resolved markets and the same 30-40 wallets keep surfacing near the top.  
 Again. Again. Again.  
 They don't look lucky. They look *early*. Maybe informed. Maybe just faster.
 
-Either way, the gap is real - not cheating, just information asymmetry with better execution.
+Either way, the gap is real — not cheating, just information asymmetry with better execution.
 
 Then the question hits you.
 
@@ -58,7 +59,7 @@ Watches every wallet you point it at. The moment one of them executes a trade:
 ```
 [02:13:44] Polling target wallets...         no new activity
 [02:13:45] Polling target wallets...         no new activity
-[02:13:46] Polling target wallets...          TRADE DETECTED 
+[02:13:46] Polling target wallets...         ── TRADE DETECTED ──
 
            Wallet   0x7C3D...C6B
            Market   Will X happen before Y?
@@ -66,8 +67,8 @@ Watches every wallet you point it at. The moment one of them executes a trade:
            Size     $8,500
            Price    0.44
 
-[02:13:46] Staleness check...                0s old - OK
-[02:13:46] Price drift check...              current 0.45 - within 5% threshold
+[02:13:46] Staleness check...                0s old — OK
+[02:13:46] Price drift check...              current 0.45 — within 5% threshold
 [02:13:46] Sizing your position...           $5,000 ÷ $85,000 × $8,500 = $500
 [02:13:47] Submitting order...               FILLED at 0.45
 [02:13:47] Writing to MongoDB...             done ✓
@@ -80,19 +81,19 @@ Every hour. Every night you don't feel like watching markets.
 
 ---
 
-## Who You Follow - That's Your Edge
+## Who You Follow — That's Your Edge
 
 The bot is the execution layer. **The alpha is in who you choose to mirror.**
 
-This bot works with any public Polymarket wallet - paste any address and it starts watching immediately. You can follow one trader or twenty, comma-separated in a single config line.
+Works with any public Polymarket wallet — paste any address and it starts watching immediately. Follow one trader or twenty, comma-separated in a single config line.
 
 Some of the most-studied wallets right now:
 
 | Trader | Profile | Known For |
 |---|---|---|
 | **Car** | [polymarket.com/@Car](https://polymarket.com/@Car?tab=activity) | Consistent leaderboard presence, high-conviction sizing |
-| **Sonix** | [polymarket.com/@Sonix](https://polymarket.com/@Sonix?tab=activity ) | Highly active, widely followed by the community |
-| **Your whale** | The wallets you've already been watching | * |
+| **Sonix** | [polymarket.com/@Sonix](https://polymarket.com/@Sonix?tab=activity) | Highly active, widely followed by the community |
+| **Your whale** | The wallets you've already been watching | You know who they are |
 
 > Start at [polymarket.com/leaderboard](https://polymarket.com/leaderboard). Sort by profit. Filter by market type. The wallets worth following surface quickly.
 
@@ -104,13 +105,16 @@ You don't need to match a whale's capital to mirror their edge. The bot calculat
 
 **Formula:** `your_balance ÷ target_balance × target_position_size`
 
-| Target's Position | Your Balance | Your Mirrored Size |
-|---|---|---|
-| $10,000 | $10,000 (vs $50k target) | $10,000 |
-| $10,000 | $5000 (vs $50k target) | $3,000 |
-| $10,000 | $3000 (vs $50k target) | $1,000 |
+Assuming the target holds **$50,000** and their position size is **$10,000**:
 
-You stay in your lane. The bot handles the math every single time.
+| Your Balance | Sizing Ratio | Your Mirrored Position |
+|---|---|---|
+| $10,000 | 20% | **$2,000** |
+| $5,000 | 10% | **$1,000** |
+| $3,000 | 6% | **$600** |
+| $1,000 | 2% | **$200** |
+
+You stay in your lane. The bot handles the math every single time, on every trade.
 
 ---
 
@@ -121,18 +125,18 @@ The sizing model works at any balance - but not all balances are equal in practi
 | Deployed Capital | Reality | Recommended Stage |
 |---|---|---|
 | **< $500** | Positions too small - some fill attempts will fail on thin markets | Testing and validation only |
-| **$500 ~ $2,000** | Functional mirroring, real fills, real data you can learn from | First 30 days |
-| **$2,000 ~ $5,000** | Meaningful exposure - positions large enough to matter | After reviewing 30+ days of logs |
-| **$5,000 ~ $20,000** | Full proportional parity on most trades | With your own PnL data |
+| **$500 - $2,000** | Functional mirroring, real fills, real data you can learn from | First 30 days |
+| **$2,000 - $5,000** | Meaningful exposure - positions large enough to matter | After reviewing 30+ days of logs |
+| **$5,000 - $20,000** | Full proportional parity on most trades | With your own PnL data |
 | **> $20,000** | Large orders can move thin markets - requires careful wallet selection | Advanced, multi-wallet setup |
 
-> The sweet spot most people find: **$3,000~$5,000** gives you enough size to generate meaningful returns without needing to monitor every fill manually.
+> The sweet spot most people find: **$3,000 – $5,000** gives you enough size to generate meaningful returns without needing to monitor every fill manually.
 
 ---
 
 ## The Guardrails
 
-The bot doesn't blindly chase every signal. Four checks run before any order fires:
+The bot doesn't blindly chase every signal. Six checks run before any order fires:
 
 | Guard | Threshold | What It Prevents |
 |---|---|---|
@@ -151,7 +155,7 @@ The bot doesn't blindly chase every signal. Four checks run before any order fir
 
 ```bash
 # 1. Clone and install
-git clone https://github.com/LemnLabs/polymarket-copytrading-bot.git
+git clone https://github.com/pCateye/polymarket-copytrading-bot.git
 cd polymarket-copytrading-bot
 npm install
 
@@ -169,7 +173,7 @@ USER_ADDRESS=0xTargetWalletAddress
 # Multiple wallets (comma-separated):
 # USER_ADDRESS=0xWallet1,0xWallet2,0xWallet3
 
-#  Your wallet
+# Your wallet
 PROXY_WALLET=0xYourWalletAddress
 PRIVATE_KEY=your_private_key_here        # never commit this
 
@@ -244,7 +248,7 @@ src/
 |---|---|---|---|
 | `USER_ADDRESS` | Yes | - | Target wallet(s), comma-separated |
 | `PROXY_WALLET` | Yes | - | Your execution wallet address |
-| `PRIVATE_KEY` | Yes | - | Signing key - never commit |
+| `PRIVATE_KEY` | Yes | - | Signing key — never commit |
 | `CLOB_HTTP_URL` | Yes | - | `https://clob.polymarket.com` |
 | `CLOB_WS_URL` | Yes | - | `wss://clob-ws.polymarket.com` |
 | `RPC_URL` | Yes | - | Polygon RPC endpoint |
@@ -298,6 +302,7 @@ npm run format       # Prettier format
 ---
 
 ## Contributing
+
 
 Run it. Log your results. Open a PR if you've improved execution speed, sizing logic, slippage measurement, or PnL reporting. The bot gets sharper every time someone runs it seriously.
 

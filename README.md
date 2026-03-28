@@ -81,7 +81,7 @@ Every hour. Every night you don't feel like watching markets.
 
 ---
 
-## Who You Follow — That's Your Edge
+## Who You Follow - That's Your Edge
 
 The bot is the execution layer. **The alpha is in who you choose to mirror.**
 

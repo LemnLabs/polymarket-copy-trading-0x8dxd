@@ -241,8 +241,7 @@ src/
 
 **Stack:** TypeScript (strict) · Node.js · `@polymarket/clob-client` · `ethers` · `mongoose` · `axios` · `ora` · `chalk`
 
-<details>
-<summary><strong>Full configuration reference</strong></summary>
+<strong>Full configuration reference</strong>
 
 | Variable | Required | Default | Description |
 |---|---|---|---|
@@ -258,7 +257,6 @@ src/
 | `TOO_OLD_TIMESTAMP` | No | `24` | Max event age in hours |
 | `RETRY_LIMIT` | No | `3` | Max order retries |
 
-</details>
 
 ---
 

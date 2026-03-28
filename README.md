@@ -247,7 +247,7 @@ src/
 |---|---|---|---|
 | `USER_ADDRESS` | Yes | - | Target wallet(s), comma-separated |
 | `PROXY_WALLET` | Yes | - | Your execution wallet address |
-| `PRIVATE_KEY` | Yes | - | Signing key — never commit |
+| `PRIVATE_KEY` | Yes | - | Signing key - never commit |
 | `CLOB_HTTP_URL` | Yes | - | `https://clob.polymarket.com` |
 | `CLOB_WS_URL` | Yes | - | `wss://clob-ws.polymarket.com` |
 | `RPC_URL` | Yes | - | Polygon RPC endpoint |

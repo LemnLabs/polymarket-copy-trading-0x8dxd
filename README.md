@@ -125,8 +125,8 @@ The sizing model works at any balance - but not all balances are equal in practi
 | Deployed Capital | Reality | Recommended Stage |
 |---|---|---|
 | **< $500** | Positions too small - some fill attempts will fail on thin markets | Testing and validation only |
-| **$500 - $2,000** | Functional mirroring, real fills, real data you can learn from | First 30 days |
-| **$2,000 - $5,000** | Meaningful exposure - positions large enough to matter | After reviewing 30+ days of logs |
+| **$500 - $2,000** | Functional mirroring, real fills, real data you can learn from | First 3 days |
+| **$2,000 - $5,000** | Meaningful exposure - positions large enough to matter | After reviewing 3+ days of logs |
 | **$5,000 - $20,000** | Full proportional parity on most trades | With your own PnL data |
 | **> $20,000** | Large orders can move thin markets - requires careful wallet selection | Advanced, multi-wallet setup |
 
